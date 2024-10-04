@@ -3,9 +3,6 @@ h2{
 }
 
 
-
-
-
 .boxA4{
     padding: 20px;
     width: 500px;
@@ -14,6 +11,29 @@ h2{
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
+}
+
+.card {
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 1px solid rgba(0, 0, 0, .125);
+        border-radius: .25rem;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
 }
 
 .center{
@@ -127,9 +147,35 @@ h1.eg1 {
 
 #monospace { font-family: "Courier New"; }
 
+nav {
+    margin-bottom: 2em;
+    margin: 0;
+}
+.navbar nav ul {
+    list-style: none;
+    padding-left: 0;
+}
+.navbar nav ul li {
+    float: left;
+}
+
+.navbar nav ul li a {
+    text-align: center;
+    display: block;
+    width: 297px;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: greenyellow;
+    color: blue;
+    font-weight: bold;
+    
+}
 p.eg2 {
     color: blue;
     text-align: left;
     text-shadow: -2px -2px 4px red;
     font-size: 300%;
+}
+main {
+    clear: left;
 }
