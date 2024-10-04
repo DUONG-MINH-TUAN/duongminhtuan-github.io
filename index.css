@@ -1,9 +1,9 @@
-h2{
+h2 {
     color: rgb(87, 218, 174);
 }
 
 
-.boxA4{
+.boxA4 {
     padding: 20px;
     width: 500px;
     height: 800px;
@@ -14,17 +14,17 @@ h2{
 }
 
 .card {
-        position: relative;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        min-width: 0;
-        word-wrap: break-word;
-        background-color: #fff;
-        background-clip: border-box;
-        border: 1px solid rgba(0, 0, 0, .125);
-        border-radius: .25rem;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
 }
 
 .row {
@@ -36,34 +36,38 @@ h2{
     margin-left: -15px;
 }
 
-.center{
+.center {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-footer{
+footer {
     height: 56px;
     background-color: gainsboro;
-    
+
 }
 
-table, th, td {
+table,
+th,
+td {
     border: 1px solid white;
     border-collapse: collapse;
     padding: 10px;
     text-align: center;
 }
-  th, td {
+
+th,
+td {
     background-color: #96D4D4;
-   
+
 }
 
-.not-center{
+.not-center {
     text-align: left;
 }
 
-.container{
+.container {
     padding: 20px;
     width: 500px;
     height: 800px;
@@ -73,14 +77,14 @@ table, th, td {
     box-sizing: border-box;
 }
 
-.center .card{
+.center .card {
     width: 1100px;
     height: 800px;
     background-color: rgba(0, 0, 0, 0.731);
 }
 
 
-.center .card .card{
+.center .card .card {
     display: flex;
     margin: 45px 35px 45px 35px;
     width: 300px;
@@ -89,8 +93,8 @@ table, th, td {
     flex-direction: column;
 }
 
-/* card-img-top css style */
-.image-container{
+
+.image-container {
     border-top-left-radius: calc(.25rem - 1px);
     border-top-right-radius: calc(.25rem - 1px);
     flex-shrink: 0;
@@ -104,59 +108,75 @@ table, th, td {
     overflow: clip;
 }
 
-.info-container{
+.info-container {
     padding: 25px;
     text-align: left;
 }
 
-.background{
+.background {
     background-color: gainsboro;
 }
-a:hover, a:focus { color: fuchsia; }
+
+a:hover,
+a:focus {
+    color: fuchsia;
+}
 
 :root {
     --color-1: red;
 }
+
 h1 {
     text-shadow: 2px 2px 4px var(--color-1);
     color: gold;
 }
-main p:nth-child(3) { font-weight: bold; }
-main p:nth-child(3)::first-letter { font-size: 100%; }
 
-.float-left{
-   
+main p:nth-child(3) {
+    font-weight: bold;
+}
+
+main p:nth-child(3)::first-letter {
+    font-size: 100%;
+}
+
+.float-left {
+
     float: left;
     margin-right: 5px;
 }
 
-.no-float-left{
+.no-float-left {
     clear: left;
     padding: 5px;
 }
 
-.low-size{
+.low-size {
     font-size: 80%;
 }
+
 h1.eg1 {
     color: #ef9c00;
     text-align: center;
-    text-shadow: 4px 4px; 
-    font-size: 300%; 
+    text-shadow: 4px 4px;
+    font-size: 300%;
 }
 
-#monospace { font-family: "Courier New"; }
+#monospace {
+    font-family: "Courier New";
+}
 
 nav {
     margin-bottom: 2em;
     margin: 0;
 }
+
 .navbar nav ul {
     list-style: none;
     padding-left: 0;
 }
+
 .navbar nav ul li {
-    float: left;
+    float:left;
 }
 
 .navbar nav ul li a {
@@ -168,14 +188,32 @@ nav {
     background-color: greenyellow;
     color: blue;
     font-weight: bold;
-    
+
 }
+
 p.eg2 {
     color: blue;
     text-align: left;
     text-shadow: -2px -2px 4px red;
     font-size: 300%;
 }
-main {
+
+main{
     clear: left;
+}
+
+h6+p {
+    margin-top: .5em;
+}
+
+.selector main>p {
+    font-size: 80%;
+}
+
+.selector li>a {
+    color: green;
+}
+
+h6~p {
+    margin-left: 2em;
 }
